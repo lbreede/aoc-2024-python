@@ -48,7 +48,10 @@ def safe_report(report: list[int]) -> bool:
     )
 
 
-def main():
+def main(print_day: bool = True):
+    if print_day:
+        print(f"\n== Day {DAY} ==")
+
     print("=== Part 1 ===")
     run(part1, 2)
 
@@ -57,4 +60,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(print_day=False)

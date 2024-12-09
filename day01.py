@@ -31,8 +31,9 @@ def part2(reader: IO) -> int:
     return sum(x * t[1].count(x) for x in t[0])
 
 
-def main():
-    print(f"== Day {DAY} ==")
+def main(print_day: bool = True):
+    if print_day:
+        print(f"\n== Day {DAY} ==")
     print("=== Part 1 ===")
     run(part1, 11)
 
@@ -41,4 +42,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(print_day=False)

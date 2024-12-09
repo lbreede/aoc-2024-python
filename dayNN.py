@@ -21,7 +21,9 @@ def part2(reader: IO) -> int:
     return -1
 
 
-def main():
+def main(print_day: bool = True):
+    if print_day:
+        print(f"\n== Day {DAY} ==")
     print("=== Part 1 ===")
     # TODO: Set the expected answer for the test input
     run(part1, 0)
@@ -31,4 +33,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(print_day=False)
